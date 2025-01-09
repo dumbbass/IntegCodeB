@@ -1,0 +1,35 @@
+/* Dashboard Content Styling */
+.dashboard-overview {
+  background-color: #6A42C2;
+  padding: 16px; /* Reduced padding */
+  border-radius: 8px; /* Slightly reduced border radius */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+}
+
+/* Center the title in the dashboard overview */
+.dashboard-overview h2 {
+font-size: 1.125rem; /* Reduced font size */
+font-weight: bold;
+color: white;
+text-align: center; /* Center the text */
+}
+
+/* Flex container for the charts */
+.mt-6.flex {
+display: flex;
+flex-direction: column; /* Aligns items vertically */
+align-items: center; /* Centers the items horizontally */
+gap: 24px; /* Adds space between each chart */
+}
+
+/* Chart container for a uniform width */
+.bg-white.p-6 {
+width: 100%;
+max-width: 800px; /* Set a max width for each chart container */
+margin: 10px auto; /* Center align the container */
+}
+
+canvas {
+max-width: 100%; /* Ensures the chart stretches to fit the container */
+height: auto; /* Adjusts the chart's height proportionally */
+}

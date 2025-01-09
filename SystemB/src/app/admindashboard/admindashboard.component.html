@@ -1,0 +1,111 @@
+<aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidenav">
+    <div class="overflow-y-auto py-5 px-3 h-full bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-between">
+        <!-- Logo and Care CRM centered -->
+        <a href="https://flowbite.com" class="flex items-center mb-6 justify-center">
+            <img src="assets/logo.png" class="mr-3 h-8 sm:h-10" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white text-[#6A42C2]">Care CRM</span>
+        </a>
+        <ul class="space-y-4 w-full">
+            <li class="mt-2">
+                <a href="#" class="flex items-center p-3 text-base font-normal text-black rounded-lg dark:text-black hover:bg-[#6A42C2] hover:text-white group">
+                    <i class="fas fa-th w-6 h-6 text-black dark:text-black group-hover:text-white"></i>
+                    <span class="ml-4">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center p-3 text-base font-normal text-black rounded-lg dark:text-black hover:bg-[#6A42C2] hover:text-white group">
+                    <i class="fas fa-user w-6 h-6 text-black dark:text-black group-hover:text-white"></i>
+                    <span class="ml-4">Patients</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center p-3 text-base font-normal text-black rounded-lg dark:text-black hover:bg-[#6A42C2] hover:text-white group">
+                    <i class="fas fa-calendar-alt w-6 h-6 text-black dark:text-black group-hover:text-white"></i>
+                    <span class="ml-4">Appointments</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center p-3 text-base font-normal text-black rounded-lg dark:text-black hover:bg-[#6A42C2] hover:text-white group">
+                    <i class="fas fa-file-alt w-6 h-6 text-black dark:text-black group-hover:text-white"></i>
+                    <span class="ml-4">Reports</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center p-3 text-base font-normal text-black rounded-lg dark:text-black hover:bg-[#6A42C2] hover:text-white group">
+                    <i class="fas fa-cog w-6 h-6 text-black dark:text-black group-hover:text-white"></i>
+                    <span class="ml-4">Settings</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Logout button with icon at the bottom and centered -->
+        <div class="mt-auto flex justify-center w-full">
+            <a href="#" class="flex items-center p-3 text-base font-normal text-black rounded-lg dark:text-black hover:bg-[#6A42C2] hover:text-white group">
+                <i class="fas fa-sign-out-alt w-6 h-6 text-black dark:text-black group-hover:text-white"></i>
+                <span class="ml-4">Logout?</span>
+            </a>
+        </div>
+    </div>
+</aside>
+
+<!-- Main Dashboard Content -->
+<main class="ml-64 p-4"> <!-- Reduced padding here -->
+    <!-- Dashboard Overview Section -->
+    <div class="dashboard-overview bg-[#6A42C2] p-4 text-white rounded-lg shadow-md"> <!-- Reduced padding -->
+        <h2 class="text-lg font-bold">Dashboard Overview</h2> <!-- Reduced font size -->
+        <div class="grid grid-cols-3 gap-3 mt-4"> <!-- Reduced gap -->
+            <div class="stat-card bg-white text-black p-3 rounded-lg shadow-md"> <!-- Reduced padding -->
+                <h3 class="font-bold text-sm">Total Patients</h3> <!-- Reduced font size -->
+                <p class="text-xl">500</p> <!-- Reduced font size -->
+            </div>
+            <div class="stat-card bg-white text-black p-3 rounded-lg shadow-md"> <!-- Reduced padding -->
+                <h3 class="font-bold text-sm">Total Appointments</h3> <!-- Reduced font size -->
+                <p class="text-xl">120</p> <!-- Reduced font size -->
+            </div>
+            <div class="stat-card bg-white text-black p-3 rounded-lg shadow-md"> <!-- Reduced padding -->
+                <h3 class="font-bold text-sm">Total Reports</h3> <!-- Reduced font size -->
+                <p class="text-xl">80</p> <!-- Reduced font size -->
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-10">
+        <h3 class="text-2xl font-semibold text-[#6A42C2]">Recent Patient Registrations</h3>
+        <div class="bg-white p-4 rounded-lg shadow-md mt-4">
+            <ul class="space-y-4">
+                <li class="flex justify-between">
+                    <p class="font-semibold">Ar-jay Stephenbel P. San Jose as a new patient</p>
+                    <p class="text-sm text-gray-500">Dec 9, 2024 at 9:40 AM</p>
+                </li>
+                <li class="flex justify-between">
+                    <p class="font-semibold">Keanu Nedruda registered as a new patient</p>
+                    <p class="text-sm text-gray-500">Dec 9, 2024 at 11:15 AM</p>
+                </li>
+                <li class="flex justify-between">
+                    <p class="font-semibold">Jeffrey Olaes registered as a new patient</p>
+                    <p class="text-sm text-gray-500">Dec 9, 2024 at 9:15 AM</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Recent User Logins Section -->
+    <div class="mt-6">
+        <h3 class="text-2xl font-semibold text-[#6A42C2]">Recent User Logins</h3>
+        <div class="bg-white p-4 rounded-lg shadow-md mt-4">
+            <ul class="space-y-4">
+                <li class="flex justify-between">
+                    <p class="font-semibold">Ar-jay Stephenbel San Jose logged in</p>
+                    <p class="text-sm text-gray-500">Dec 10, 2024 at 8:00 AM</p>
+                </li>
+                <li class="flex justify-between">
+                    <p class="font-semibold">Keanu Nedruda logged in</p>
+                    <p class="text-sm text-gray-500">Dec 9, 2024 at 9:15 AM</p>
+                </li>
+                <li class="flex justify-between">
+                    <p class="font-semibold">Jeffrey Olaes logged in</p>
+                    <p class="text-sm text-gray-500">Dec 9, 2024 at 10:30 AM</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    

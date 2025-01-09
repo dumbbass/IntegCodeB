@@ -1,0 +1,100 @@
+/* Dashboard Content Styling */
+.dashboard-overview {
+    background-color: #6A42C2;
+    padding: 16px; /* Reduced padding */
+    border-radius: 8px; /* Slightly reduced border radius */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  }
+  
+  .dashboard-overview h2 {
+    font-size: 1.125rem; /* Reduced font size */
+    font-weight: bold;
+    color: white;
+  }
+  
+  .dashboard-overview .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px; /* Reduced gap */
+    margin-top: 16px; /* Reduced margin-top */
+  }
+  
+  .stat-card {
+    background-color: white;
+    padding: 12px; /* Reduced padding */
+    border-radius: 8px; /* Reduced border radius */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+    text-align: center;
+  }
+  
+  .stat-card h3 {
+    font-size: 0.875rem; /* Reduced font size */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .stat-card p {
+    font-size: 1.5rem; /* Reduced font size */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .mt-auto {
+    margin-top: auto;
+  }
+  
+
+  /* General Container Styles */
+.bg-white {
+    background-color: white;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.rounded-lg {
+    border-radius: 8px;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.space-y-4 {
+    margin-top: 1rem;
+}
+
+/* Title Styles */
+.text {
+    color: #6A42C2;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+/* List Item Styling */
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-gray-500 {
+    color: #6B7280;
+}
