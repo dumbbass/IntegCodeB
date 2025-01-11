@@ -1,0 +1,63 @@
+<!-- Hamburger Button for Mobile -->
+<button 
+  (click)="toggleSidebar()" 
+  class="sm:hidden fixed top-4 left-4 z-50 p-2 rounded-md bg-[#6A42C2] text-white focus:outline-none">
+  <i class="fas fa-bars"></i>
+</button>
+
+<!-- Sidebar -->
+<aside
+  [ngClass]="{ '-translate-x-full': !sidebarOpen, 'translate-x-0': sidebarOpen }"
+  class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform sm:translate-x-0 bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-between"
+  aria-label="Sidenav">
+  
+  <div class="overflow-y-auto py-5 px-3 h-full">
+    <!-- Logo -->
+    <button (click)="navigateTo('/admindashboard')" class="flex items-center mb-6 justify-center">
+      <img src="assets/logo.png" class="mr-3 h-8 sm:h-10" alt="Logo" />
+      <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white text-[#6A42C2]">Care CRM</span>
+    </button>
+
+    <!-- Navigation Links -->
+    <ul class="space-y-4 w-full">
+      <li>
+        <button (click)="navigateTo('/admindashboard')" class="flex items-center p-3 text-base font-normal text-black rounded-lg hover:bg-[#6A42C2] hover:text-white">
+          <i class="fas fa-th w-6 h-6"></i>
+          <span class="ml-4">Dashboard</span>
+        </button>
+      </li>
+      <li>
+        <button (click)="navigateTo('/adminpatients')" class="flex items-center p-3 text-base font-normal text-black rounded-lg hover:bg-[#6A42C2] hover:text-white">
+          <i class="fas fa-user w-6 h-6"></i>
+          <span class="ml-4">Patients</span>
+        </button>
+      </li>
+      <li>
+        <button (click)="navigateTo('/adminappointments')" class="flex items-center p-3 text-base font-normal text-black rounded-lg hover:bg-[#6A42C2] hover:text-white">
+          <i class="fas fa-calendar-alt w-6 h-6"></i>
+          <span class="ml-4">Appointments</span>
+        </button>
+      </li>
+      <li>
+        <button (click)="navigateTo('/adminreports')" class="flex items-center p-3 text-base font-normal text-black rounded-lg hover:bg-[#6A42C2] hover:text-white">
+          <i class="fas fa-file-alt w-6 h-6"></i>
+          <span class="ml-4">Reports</span>
+        </button>
+      </li>
+      <li>
+        <button (click)="navigateTo('/adminsettings')" class="flex items-center p-3 text-base font-normal text-black rounded-lg hover:bg-[#6A42C2] hover:text-white">
+          <i class="fas fa-cog w-6 h-6"></i>
+          <span class="ml-4">Settings</span>
+        </button>
+      </li>
+    </ul>
+
+    <!-- Logout Button -->
+    <div class="mt-auto flex justify-center w-full">
+      <button (click)="logout()" class="flex items-center p-3 text-base font-normal text-black rounded-lg hover:bg-red-600 hover:text-white">
+        <i class="fas fa-sign-out-alt w-6 h-6"></i>
+        <span class="ml-4">Logout</span>
+      </button>
+    </div>
+  </div>
+</aside>

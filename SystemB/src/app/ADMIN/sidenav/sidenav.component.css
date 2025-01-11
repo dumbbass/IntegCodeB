@@ -1,0 +1,16 @@
+/* Smooth sidebar transition */
+aside {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hide the sidebar on small screens */
+  @media (max-width: 640px) {
+    aside {
+      transform: translateX(-100%);
+    }
+  
+    aside.translate-x-0 {
+      transform: translateX(0);
+    }
+  }
+  

@@ -1,12 +1,14 @@
 import { Routes } from '@angular/router';
-import { RegisterComponent } from './register/register.component';
-import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { RegisterComponent } from './ADMIN/register/register.component';
+import { AdminloginComponent } from './ADMIN/adminlogin/adminlogin.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
-import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
-import { AdminpatientsComponent } from './adminpatients/adminpatients.component';
-import { AdminappointmentsComponent } from './adminappointments/adminappointments.component';
-import { AdminreportsComponent } from './adminreports/adminreports.component';
-import { AdminsettingsComponent } from './adminsettings/adminsettings.component';
+import { AdmindashboardComponent } from './ADMIN/admindashboard/admindashboard.component';
+import { AdminpatientsComponent } from './ADMIN/adminpatients/adminpatients.component';
+import { AdminappointmentsComponent } from './ADMIN/adminappointments/adminappointments.component';
+import { AdminreportsComponent } from './ADMIN/adminreports/adminreports.component';
+import { AdminsettingsComponent } from './ADMIN/adminsettings/adminsettings.component';
+import { AuthGuard } from './auth.guard'; // Import AuthGuard
+import { SidenavComponent } from './ADMIN/sidenav/sidenav.component';
 
 export const routes: Routes = [
     {path: 'register', component: RegisterComponent},
@@ -17,6 +19,7 @@ export const routes: Routes = [
     {path: 'adminappointments', component: AdminappointmentsComponent},
     {path: 'adminreports', component: AdminreportsComponent},
     {path: 'adminsettings', component: AdminsettingsComponent},
+    {path: 'sidenavComponent ', component: SidenavComponent},
     
     
 
