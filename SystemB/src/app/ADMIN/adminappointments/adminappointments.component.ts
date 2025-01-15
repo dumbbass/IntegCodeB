@@ -10,4 +10,12 @@ import { SidenavComponent } from '../sidenav/sidenav.component';
 })
 export class AdminappointmentsComponent {
 
+  // Method to handle scheduling a new appointment
+  scheduleNewAppointment(event: Event) {
+    event.preventDefault();
+    console.log('Schedule new appointment action triggered');
+    // Implement logic to schedule a new appointment
+  }
+
+  // Additional methods to manage appointments can be added here
 }
