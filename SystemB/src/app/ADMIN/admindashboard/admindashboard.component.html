@@ -1,24 +1,32 @@
-
 <app-sidenav></app-sidenav>
 
 <!-- Main Dashboard Content -->
-<main class="ml-64 p-4"> <!-- Reduced padding here -->
+<main class="ml-64 p-4">
     <!-- Dashboard Overview Section -->
-    <div class="dashboard-overview bg-[#6A42C2] p-4 text-white rounded-lg shadow-md"> <!-- Reduced padding -->
-        <h2 class="text-lg font-bold">Dashboard Overview</h2> <!-- Reduced font size -->
-        <div class="grid grid-cols-3 gap-3 mt-4"> <!-- Reduced gap -->
-            <div class="stat-card bg-white text-black p-3 rounded-lg shadow-md"> <!-- Reduced padding -->
-                <h3 class="font-bold text-sm">Total Patients</h3> <!-- Reduced font size -->
-                <p class="text-xl">500</p> <!-- Reduced font size -->
+    <div class="dashboard-overview bg-[#6A42C2] p-4 text-white rounded-lg shadow-md">
+        <h2 class="text-lg font-bold">Dashboard Overview</h2>
+        <div class="grid grid-cols-3 gap-3 mt-4">
+            <div class="stat-card bg-white text-black p-3 rounded-lg shadow-md">
+                <h3 class="font-bold text-sm">Total Patients</h3>
+                <p class="text-xl">500</p>
             </div>
-            <div class="stat-card bg-white text-black p-3 rounded-lg shadow-md"> <!-- Reduced padding -->
-                <h3 class="font-bold text-sm">Total Appointments</h3> <!-- Reduced font size -->
-                <p class="text-xl">120</p> <!-- Reduced font size -->
+            <div class="stat-card bg-white text-black p-3 rounded-lg shadow-md">
+                <h3 class="font-bold text-sm">Appointments Today</h3>
+                <p class="text-xl">15</p>
             </div>
-            <div class="stat-card bg-white text-black p-3 rounded-lg shadow-md"> <!-- Reduced padding -->
-                <h3 class="font-bold text-sm">Total Reports</h3> <!-- Reduced font size -->
-                <p class="text-xl">80</p> <!-- Reduced font size -->
+            <div class="stat-card bg-white text-black p-3 rounded-lg shadow-md">
+                <h3 class="font-bold text-sm">Pending Tasks</h3>
+                <p class="text-xl">8</p>
             </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions Section -->
+    <div class="mt-10">
+        <h3 class="text-2xl font-semibold text-[#6A42C2]">Quick Actions</h3>
+        <div class="bg-white p-4 rounded-lg shadow-md mt-4">
+            <button class="bg-[#6A42C2] text-white p-2 rounded-lg mr-2" (click)="addPatient()">Add Patient</button>
+            <button class="bg-[#6A42C2] text-white p-2 rounded-lg" (click)="scheduleAppointment()">Schedule Appointment</button>
         </div>
     </div>
 
@@ -62,4 +70,5 @@
             </ul>
         </div>
     </div>
+</main>
     

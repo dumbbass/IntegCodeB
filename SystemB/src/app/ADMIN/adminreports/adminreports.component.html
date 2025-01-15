@@ -4,7 +4,26 @@
 <main class="appointments-content pt-20 px-8">
     <h2 class="text-2xl font-semibold mb-4">Reports Management</h2>
     
-    <!-- Reports List Table -->
+    <!-- Basic Reports Section -->
+    <section class="mb-8">
+        <h3 class="text-xl font-semibold mb-2">Basic Reports</h3>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <p>Total Patients: 500</p>
+            <p>Total Appointments: 120</p>
+            <p>Missed Appointments: 10</p>
+        </div>
+    </section>
+
+    <!-- Export Data Section -->
+    <section class="mb-8">
+        <h3 class="text-xl font-semibold mb-2">Export Data</h3>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <button class="bg-[#6A42C2] text-white p-2 rounded-lg mr-2" (click)="exportData('patients')">Export Patients (CSV)</button>
+            <button class="bg-[#6A42C2] text-white p-2 rounded-lg" (click)="exportData('appointments')">Export Appointments (CSV)</button>
+        </div>
+    </section>
+
+    <!-- Existing Reports List Table -->
     <table class="min-w-full table-auto border-collapse bg-white">
         <thead>
             <tr class="bg-gray-100">
