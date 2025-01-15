@@ -4,13 +4,15 @@
 <main class="appointments-content pt-20 px-8">
     <h2 class="text-2xl font-semibold mb-4">Reports Management</h2>
     
-    <!-- Basic Reports Section -->
+    <!-- Summary View Section -->
     <section class="mb-8">
-        <h3 class="text-xl font-semibold mb-2">Basic Reports</h3>
+        <h3 class="text-xl font-semibold mb-2">Summary View</h3>
         <div class="bg-white p-4 rounded-lg shadow-md">
-            <p>Total Patients: 500</p>
-            <p>Total Appointments: 120</p>
-            <p>Missed Appointments: 10</p>
+            <p>Total Patients: {{ totalPatients }}</p>
+            <p>Appointments This Week: {{ appointmentsThisWeek }}</p>
+            <p>Appointments This Month: {{ appointmentsThisMonth }}</p>
+            <p>Total Appointments: {{ totalAppointments }}</p>
+            <p>Missed Appointments: {{ missedAppointments }}</p>
         </div>
     </section>
 
