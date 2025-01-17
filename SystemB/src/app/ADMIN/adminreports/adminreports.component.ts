@@ -10,6 +10,13 @@ import { SidenavComponent } from '../sidenav/sidenav.component';
 })
 export class AdminreportsComponent {
 
+  // Summary data properties
+  totalPatients: number = 500; // Example value
+  appointmentsThisWeek: number = 30; // Example value
+  appointmentsThisMonth: number = 120; // Example value
+  totalAppointments: number = 120; // Example value
+  missedAppointments: number = 10; // Example value
+
   // Method to handle exporting data
   exportData(type: string) {
     console.log(`Exporting ${type} data`);
